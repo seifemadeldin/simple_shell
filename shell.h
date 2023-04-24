@@ -9,8 +9,6 @@
 #include <errno.h>
 
 
-/*GetLine.c*/
-char *Getline(void);
 
 
 #endif /* SHELL_H */
