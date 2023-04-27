@@ -1,4 +1,8 @@
 #include "shell.h"
+/**
+ * execmd - execute the command
+ * @argv: arguments
+ */
 
 void execmd(char **argv)
 {

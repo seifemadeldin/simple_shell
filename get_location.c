@@ -1,4 +1,9 @@
 #include "shell.h"
+/**
+ * get_location - get variable PATH.
+ * @env: enviromente local
+ * Return: value of PATH.
+ */
 
 char *get_location(char *command)
 {

@@ -1,4 +1,10 @@
 #include "shell.h"
+/**
+ * main - main arguments functions
+ * @ac:count of argumnents
+ * @argv: arguments
+ * Return: _exit = 0.
+ */
 
 int main(int ac, char **argv)
 {
@@ -69,7 +75,7 @@ int main(int ac, char **argv)
         /*execute the command in argv*/
         execmd(argv);
     }
-    
+
     /* free up allocated memory */
     free(lineptr);
     free(lineptr_copy);
