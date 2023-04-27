@@ -26,7 +26,7 @@ char *my_getline(void);
 void get_env(char **env);
 char **get_token(char *lineptr);
 void exit_command(char **args, char *lineptr, int _exit);
-int fork_function(char **arg, char **av, char **env,
+int fork_func(char **arg, char **av, char **env,
 char *lineptr, int np, int c);
 char *my_strtok(char *str, const char *delim);
 

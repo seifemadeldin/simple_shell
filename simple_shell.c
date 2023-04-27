@@ -32,7 +32,7 @@ int main(int ac, char **av, char **env)
 			else
 			{
 				n = separate_path(&user_command[0], env);
-				_exit = fork_function(user_command, av, env, getcommand, pathValue, n);
+				_exit = fork_func(user_command, av, env, getcommand, pathValue, n);
 				if (n == 0)
 					free(user_command[0]);
 			}

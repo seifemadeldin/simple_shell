@@ -28,7 +28,7 @@ char *my_strtok(char *str, const char *delim)
 	return (str);
 }
 /**
- * my_strcspn - computes the length of the maximum initial segment of the string
+ * my_strcspn - computes the length of the maximum segment of the string
  * pointed to by s1which consists entirely of characters not from the
  * string pointed to by s2.
  * @s1: string to check
