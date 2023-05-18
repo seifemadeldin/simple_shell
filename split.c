@@ -1,11 +1,11 @@
 #include "shell.h"
 /**
- * separate_path - separate the path in new strings.
+ * _split - split or tokenize the user input into strings.
  * @arg: command input of user.
  * @env: enviroment.
  * Return:  a pointer to strings.
  */
-int separate_path(char **arg, char **env)
+int _split(char **arg, char **env)
 {
 	char *token = NULL, *path_rela = NULL, *path_absol = NULL;
 	size_t value_path, command;

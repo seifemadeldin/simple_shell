@@ -31,7 +31,7 @@ int main(int ac, char **av, char **env)
 				get_env(env);
 			else
 			{
-				n = separate_path(&user_command[0], env);
+				n = _split(&user_command[0], env);
 				_exit = fork_func(user_command, av, env, getcommand, pathValue, n);
 				if (n == 0)
 					free(user_command[0]);

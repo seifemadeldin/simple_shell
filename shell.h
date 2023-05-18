@@ -21,7 +21,7 @@ char *str_cat(char *dest, char *src);
 int _putchar(char c);
 
 char *get_path(char **env);
-int separate_path(char **arg, char **env);
+int _split(char **arg, char **env);
 char *my_getline(void);
 void get_env(char **env);
 char **get_token(char *lineptr);
