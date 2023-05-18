@@ -1,6 +1,6 @@
 #include "shell.h"
 /**
- * exit_command - this function closes the simple_shell when
+ * exit_command - handlles exit command
  * @arg: pointer with the direction argument.
  * @lineptr: standar input string
  * @_exit: value of exit
@@ -28,7 +28,6 @@ void exit_command(char **arg, char *lineptr, int _exit)
  *@env: enviroment
  *Return: 0
  */
-
 void get_env(char **env)
 {
 	size_t run = 0;
