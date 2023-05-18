@@ -14,7 +14,6 @@ int main(int ac, char **av, char **env)
 
 	while (1)
 	{
-		/*using getline function*/
 		getcommand = my_getline();
 		if (getcommand)
 		{
@@ -32,7 +31,7 @@ int main(int ac, char **av, char **env)
 			else
 			{
 				n = _split(&user_command[0], env);
-				_exit = fork_func(user_command, av, env, getcommand, pathValue, n);
+				_exit = _fork(user_command, av, env, getcommand, pathValue, n);
 				if (n == 0)
 					free(user_command[0]);
 			}

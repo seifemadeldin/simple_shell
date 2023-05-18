@@ -1,16 +1,16 @@
 #include "shell.h"
-/**
- * fork_func - function that create a fork
- *@arg: command and values path
- *@av: Has the name of our program
- *@env: environment
- *@lineptr: command line for the user
- *@np: id of proces
- *@c: Checker add new test
- *Return: 0 success
- */
 
-int fork_func(char **arg, char **av, char **env, char *lineptr, int np, int c)
+/**
+ * _fork - function that create a fork or a chiled process
+ * @arg: command and values path
+ * @av: Has the name of our program
+ * @env: environment
+ * @lineptr: command line for the user
+ * @np: id of proces
+ * @c: Checker add new test
+ * Return: 0 success
+ */
+int _fork(char **arg, char **av, char **env, char *lineptr, int np, int c)
 {
 	pid_t child;
 	int status;
