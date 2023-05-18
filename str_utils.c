@@ -1,12 +1,11 @@
 #include "shell.h"
+
 /**
  *str_cat - copy string to another string.
  *@dest: char
  *@src: char
  *Return: dest
- *
  */
-
 char *str_cat(char *dest, char *src)
 {
 	int d = 0;
@@ -32,7 +31,6 @@ char *str_cat(char *dest, char *src)
  * @s2: character
  * Return: 0
  */
-
 int str_cmp(char *s1, char *s2)
 {
 	int a;
@@ -50,7 +48,6 @@ int str_cmp(char *s1, char *s2)
  * @s: A pointer
  * Return: char pointer to dest
  */
-
 int str_len(char *s)
 {
 	int ch = 0;
@@ -70,7 +67,6 @@ int str_len(char *s)
  *@n: number of characters
  * Return: diference
  */
-
 size_t str_ncmp(char *s1, char *s2, size_t n)
 {
 	size_t i, j;
@@ -91,10 +87,8 @@ size_t str_ncmp(char *s1, char *s2, size_t n)
  * str_cpy - copies the string pointed to by src into dest
  * @dest: destination of the copy
  * @src: source of the copy
- *
  * Return: char pointer to dest
  */
-
 char *str_cpy(char *dest, char *src)
 {
 	int i = 0;
