@@ -1,7 +1,7 @@
 #include "shell.h"
 
 /**
- *str_cat - copy string to another string.
+ *str_cat - concatenate string to another string.
  *@dest: char
  *@src: char
  *Return: dest
@@ -26,9 +26,9 @@ char *str_cat(char *dest, char *src)
 }
 
 /**
- * str_cmp - compare the values of a string
- * @s1: character
- * @s2: character
+ * str_cmp - compare the values of 2 strings
+ * @s1: string 1
+ * @s2: string 2
  * Return: 0
  */
 int str_cmp(char *s1, char *s2)
@@ -44,27 +44,27 @@ int str_cmp(char *s1, char *s2)
 }
 
 /**
- * str_len - copies the string pointed to by src into dest
- * @s: A pointer
- * Return: char pointer to dest
+ * str_len - finds length of a string
+ * @s: string given
+ * Return: length of the string
  */
 int str_len(char *s)
 {
-	int ch = 0;
+	int len = 0;
 
-	while (*(s + ch) != '\0')
+	while (*(s + len) != '\0')
 	{
-		ch++;
+		len++;
 	}
 
-	return (ch);
+	return (len);
 }
 
 /**
- *str_ncmp -  function that compares two strings.
- *@s1: string one
- *@s2: string two
- *@n: number of characters
+ * str_ncmp -  function that compares two strings with n number of chars
+ * @s1: string one
+ * @s2: string two
+ * @n: number of characters
  * Return: diference
  */
 size_t str_ncmp(char *s1, char *s2, size_t n)
