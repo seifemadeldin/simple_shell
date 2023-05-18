@@ -1,11 +1,11 @@
 #include "shell.h"
 /**
- * _split - split or tokenize the user input into strings.
+ * my_split - split or tokenize the user input into strings.
  * @arg: command input of user.
  * @env: enviroment.
  * Return:  a pointer to strings.
  */
-int _split(char **arg, char **env)
+int my_split(char **arg, char **env)
 {
 	char *token = NULL, *path_rela = NULL, *path_absol = NULL;
 	size_t value_path, command;
@@ -17,19 +17,19 @@ int _split(char **arg, char **env)
 	if (!path_rela)
 		return (-1);
 	token = my_strtok(path_rela, ":");
-	command = str_len(*arg);
+	command = my_str_len(*arg);
 	while (token)
 	{
-		value_path = str_len(token);
+		value_path = my_str_len(token);
 		path_absol = malloc(sizeof(char) * (value_path + command + 2));
 		if (!path_absol)
 		{
 			free(path_rela);
 			return (-1);
 		}
-		path_absol = str_cpy(path_absol, token);
-		str_cat(path_absol, "/");
-		str_cat(path_absol, *arg);
+		path_absol = my_str_cpy(path_absol, token);
+		my_str_cat(path_absol, "/");
+		my_str_cat(path_absol, *arg);
 
 		if (stat(path_absol, &stat_lineptr) == 0)
 		{

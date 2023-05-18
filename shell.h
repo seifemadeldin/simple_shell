@@ -15,13 +15,13 @@ extern char **environ;
 
 int str_cmp(char *s1, char *s2);
 size_t str_ncmp(char *s1, char *s2, size_t n);
-int str_len(char *s);
-char *str_cpy(char *dest, char *src);
-char *str_cat(char *dest, char *src);
+int my_str_len(char *s);
+char *my_str_cpy(char *dest, char *src);
+char *my_str_cat(char *dest, char *src);
 int _putchar(char c);
 
 char *get_path(char **env);
-int _split(char **arg, char **env);
+int my_split(char **arg, char **env);
 char *my_getline(void);
 void get_env(char **env);
 char **get_token(char *lineptr);

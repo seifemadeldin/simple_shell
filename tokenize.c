@@ -20,7 +20,7 @@ char **get_token(char *lineptr)
 		if (lineptr[i] == ' ')
 			size++;
 	}
-	if ((size + 1) == str_len(lineptr))
+	if ((size + 1) == my_str_len(lineptr))
 		return (NULL);
 	user_command = malloc(sizeof(char *) * (size + 2));
 	if (user_command == NULL)

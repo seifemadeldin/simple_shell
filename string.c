@@ -1,12 +1,12 @@
 #include "shell.h"
 
 /**
- *str_cat - concatenate string to another string.
+ *my_str_cat - concatenate string to another string.
  *@dest: char
  *@src: char
  *Return: dest
  */
-char *str_cat(char *dest, char *src)
+char *my_str_cat(char *dest, char *src)
 {
 	int d = 0;
 	int s = 0;
@@ -44,11 +44,11 @@ int str_cmp(char *s1, char *s2)
 }
 
 /**
- * str_len - finds length of a string
+ * my_str_len - finds length of a string
  * @s: string given
  * Return: length of the string
  */
-int str_len(char *s)
+int my_str_len(char *s)
 {
 	int len = 0;
 
@@ -84,12 +84,12 @@ size_t str_ncmp(char *s1, char *s2, size_t n)
 }
 
 /**
- * str_cpy - copies the string pointed to by src into dest
+ * my_str_cpy - copies the string pointed to by src into dest
  * @dest: destination of the copy
  * @src: source of the copy
  * Return: char pointer to dest
  */
-char *str_cpy(char *dest, char *src)
+char *my_str_cpy(char *dest, char *src)
 {
 	int i = 0;
 
