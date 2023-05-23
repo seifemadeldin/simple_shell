@@ -1,16 +1,16 @@
 #include "shell.h"
 /**
  * main - entry point
- * @ac:count of argumnents
- * @av: arguments
+ * @argc:count of argumnents
+ * @argv: arguments
  * @env: environment variable
- * Return: _exit = 0.
+ * Return: _exit = 0
  */
-int main(int ac, char **av, char **env)
+int main(int argc, char **argv, char **env)
 {
 	char *getcommand = NULL, **user_command = NULL;
 	int pathValue = 0, _exit = 0, n = 0;
-	(void)ac;
+	(void)argc;
 
 	while (1)
 	{
@@ -31,7 +31,7 @@ int main(int ac, char **av, char **env)
 			else
 			{
 				n = my_split(&user_command[0], env);
-				_exit = _fork(user_command, av, env, getcommand, pathValue, n);
+				_exit = _fork(user_command, argv, env, getcommand, pathValue, n);
 				if (n == 0)
 					free(user_command[0]);
 			}
