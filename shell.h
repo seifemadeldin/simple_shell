@@ -24,7 +24,7 @@ char *get_path(char **env);
 int my_split(char **arg, char **env);
 char *my_getline(void);
 void get_env(char **env);
-char **get_token(char *lineptr);
+char **tokenize(char *lineptr);
 void exit_command(char **args, char *lineptr, int _exit);
 int _fork(char **arg, char **av, char **env,
 char *lineptr, int np, int c);
