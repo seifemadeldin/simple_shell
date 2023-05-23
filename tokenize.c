@@ -1,6 +1,6 @@
 #include "shell.h"
 /**
- * get_token - tokenize a string
+ * tokenize - tokenize a string
  * @lineptr: comman user
  * Return: To a pointer
  */

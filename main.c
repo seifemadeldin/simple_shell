@@ -12,13 +12,13 @@ int main(int argc, char **argv, char **env)
 	int pathValue = 0, _exit = 0, n = 0;
 	(void)argc;
 
-	while (1)
+	while (1) /* prompting */
 	{
 		getcommand = my_getline();
 		if (getcommand)
 		{
 			pathValue++;
-			user_command = get_token(getcommand);
+			user_command = tokenize(getcommand);
 			if (!user_command)
 			{
 				free(getcommand);
